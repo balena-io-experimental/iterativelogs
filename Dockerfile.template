@@ -1,3 +1,9 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-debian
 
+MAINTAINER Gergely Imreh <gergely@resin.io>
+
+WORKDIR /usr/src/app
+
+COPY . ./
+
 CMD ["bash", "iterate.sh"]
