@@ -1,3 +1,3 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-debian
 
-CMD let i=0; while : ; do echo $i; let i++; sleep 1; done
+CMD ["bash", "iterate.sh"]
